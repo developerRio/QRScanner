@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SavedQRActivity">
+
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:id="@+id/headingTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:text="@string/recent_history"
+            android:textSize="18sp" />
+
+        <ImageView
+           android:layout_alignParentEnd="true"
+            android:padding="5dp"
+            android:id="@+id/switchForActionBar"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_margin="8dp"/>
+
+    </RelativeLayout>
+
+
+    <!--Todo : you can use expandable recycler view __ shows View & delete options-->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView_qr"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        tools:listitem="@layout/qr_saved_list_layout">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+</RelativeLayout>

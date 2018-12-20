@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">QRScanner</string>
+    <string name="change_layout">Change Layout</string>
+    <string name="grid">Grid</string>
+    <string name="list">List</string>
+    <string name="recent_history">Recent History</string>
+</resources>
